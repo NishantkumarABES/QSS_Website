@@ -3,8 +3,21 @@
 *{
     margin: 0;
     padding: 0;
+    
+}
+body{
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
 .navbar{
     width: 100%;
     height: 80px;
@@ -15,14 +28,14 @@
 }
 
 .logo{
-    height: 70px;
-    width: 70;
+    height: 80px;
+    width: 140px;
+    margin-left: 20px;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 .nav_links{
-    all: unset;
     list-style: none;
     display: flex;
 }
@@ -32,7 +45,8 @@
 }
 
 .nav_links li{
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -40,11 +54,19 @@
     margin-top: auto;
     margin-bottom: auto;
 }
+.nav_links li a:hover{
+    color: #EC3636;
+}
 
 .Ai{
     height: 50px;
-    width: 170px;
-    border-radius: 5px;
+    width: 190px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 2px;
+    border-color: transparent;
     background-color: #FF3635;
     margin-top: auto;
     margin-bottom: auto;
@@ -56,53 +78,71 @@
 }
 
 .hero_left{
-    margin-left: 30px;
+    margin-left: 32px;
     position: absolute;
     top: 200px;
 }
 .hero_heading{
     padding-bottom: 15px;
     font-family: "Lato", sans-serif;
-    font-weight: 800;
-    font-size: 35px;
+    font-weight: 700;
+    font-size: 36px;
     color: #FFFFFF;
 }
 
 .text_wrapper{
     font-family: "Lato", sans-serif;
-    padding-bottom: 40px;
     font-weight: 800;
     color: #EC3636;
     font-size: 35px;
+    display: inline-block;
+    border-right: 4px solid #000000;
+    padding-right: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink-cursor 0.7s step-end infinite;
 }
+
+@keyframes blink-cursor {
+    from { border-color: rgb(255, 248, 248); }
+    to { border-color: transparent; }
+}
+
 .consultaion_btn{
     font-family: "Poppins", sans-serif;
     width: 230px;
-    height: 50px;
+    height: 45px;
     font-size: 18px;
     color: white;
     border-radius: 5px;
+    border-color: transparent;
     background-color: #EC3636;
     
+}
+.consultaion_btn:hover{
+    color:#EC3636;
+    background-color: #FFFFFF;
+    transition: color 0.3s ease;
 }
 
 .portfolio_btn{
     font: "Poppins", sans-serif;
     color: #EC3636;
     width: 150px;
-    height: 50px;
+    height: 45px;
     font-size: 18px;
     border-radius: 5px;
+    border-color: transparent;
     margin-left: 15px;
 }
 
 .ratting_btn{
     font: Poppins, sans-serif;
     margin-top: 15px;
-    width: 200px;
-    height: 50px;
-    font-size: 18px;
+    width: 230px;
+    height: 45px;
     border-radius: 5px;
+    border-color: transparent;
 }
 
 .info_cantainer{

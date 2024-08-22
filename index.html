@@ -9,16 +9,16 @@
 <body>
     <nav class="navbar">
         <img class="logo" src="Images/qss_logo_1.svg" alt="None">
-        <ol class="nav_links">
-            <li id="Servies">Servies</li>
-            <li id="Technologies">Technologies</li>
-            <li id="Industries">Industries</li>
-            <li id="Portfolio">Portfolio</li>
-            <li id="Blog">Blog</li>
-            <li id="Career">Career</li>
-            <li id="About">About</li>
-            <li id="Contact">Contact</li>
-        </ol>
+        <ul class="nav_links">
+            <li id="Services"><a href="">Services</a></li>
+            <li id="Technologies"><a href="">Technologies</a></li>
+            <li id="Industries"><a href="">Industries</a></li>
+            <li id="Portfolio"><a href="">Portfolio</a></li>
+            <li id="Blog"><a href="">Blog</a></li>
+            <li id="Career"><a href="">Career</a></li>
+            <li id="About"><a href="">About</a></li>
+            <li id="Contact"><a href="">Contact</a></li>
+        </ul>
         <button class="Ai" >GENRATIVE AI</button>
     </nav>
     <div class="hero_section">
@@ -27,12 +27,14 @@
         </video>
         <div class="hero_left">
             <p class="hero_heading">Innovating Your Business with Next-Gen Solutions</p> 
-            <p class="text_wrapper">Cloud Services</p>
+            <div style="margin-bottom:50px; height:35px;" class="typewriter_container">
+                <p class="text_wrapper" id="typewriter">Cloud Services</p>
+            </div>
             <div class="hero_btn_1">
                 <button class="consultaion_btn">Book a Consultaion</button>
                 <button class="portfolio_btn">View Portfolio</button>
             </div>
-            <button class="ratting_btn">4.9 <span style="color: #EC3636;">★★★★★</span></button>
+            <button class="ratting_btn"><b>4.9</b> <span style="color: #EC3636; font-size:16px">★★★★★</span></button>
         </div>
     </div>
     <div class="info_cantainer">
@@ -76,5 +78,6 @@
         </div>
     </div>
     
+    <script src="script.js"></script>
 </body>
 </html>
