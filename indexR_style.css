@@ -1,0 +1,52 @@
+/* Responsive Navbar Styles */
+@media screen and (max-width: 990px) {
+    .main-menu :not(#genrative-ai){
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        width: 50%;
+        background-color: #181818;
+        transition: right 0.3s ease;
+    }
+    .main-menu.active {
+        right: 0;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hero-content{
+        text-align: center;
+    }
+    
+}
+
+@media  screen and (max-width: 1600px) {
+    .main-menu a{
+        padding: 20px 15px;
+    }
+    .main-menu span {
+        font-size: 18px;
+    }
+}
+@media  screen and (max-width: 1330px) {
+    .main-menu a{
+        padding: 20px 12px;
+    }
+    .main-menu span {
+        font-size: 16px;
+    }
+}
+
+@media  screen and (max-width: 1165px) {
+    .main-menu a{
+        padding: 20px 8px;
+    }
+    .main-menu span {
+        font-size: 14px;
+    }
+    .hero-heading, .text-wrapper{
+        font-size: 30px;
+    }
+}

@@ -1,7 +1,7 @@
 const textArray = ["Cloud Services", "Genrative AI", "Salesforce Integration", "Blockchain Solutions"];
 const typingSpeed = 100;
 const erasingSpeed = 50;
-const delayBetweenWords = 2000; // Delay between current and next word
+const delayBetweenWords = 2000; 
 let textArrayIndex = 0;
 let charIndex = 0;
 const typewriterElement = document.getElementById("typewriter");

@@ -3,81 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="indexR_style.css">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
     <title>Top web and Mobile App Development</title>
 </head>
 <body>
-    <nav class="navbar">
-        <img class="logo" src="Images/qss_logo_1.svg" alt="None">
-        <ul class="nav_links">
-            <li id="Services"><a href="">Services</a></li>
-            <li id="Technologies"><a href="">Technologies</a></li>
-            <li id="Industries"><a href="">Industries</a></li>
-            <li id="Portfolio"><a href="">Portfolio</a></li>
-            <li id="Blog"><a href="">Blog</a></li>
-            <li id="Career"><a href="">Career</a></li>
-            <li id="About"><a href="">About</a></li>
-            <li id="Contact"><a href="">Contact</a></li>
-        </ul>
-        <button class="Ai" >GENRATIVE AI</button>
-    </nav>
-    <div class="hero_section">
-        <video style="width: 100%;" autoplay muted loop id="myVideo">
-            <source src="Images/video_banner.mp4" type="video/mp4">
-        </video>
-        <div class="hero_left">
-            <p class="hero_heading">Innovating Your Business with Next-Gen Solutions</p> 
-            <div style="margin-bottom:50px; height:35px;" class="typewriter_container">
-                <p class="text_wrapper" id="typewriter">Cloud Services</p>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="Images/qss_logo_1.svg" alt="Logo" height="80" width="140">
+            <div class="main-menu">
+                <a href="#services"><span>Services</span></a>
+                <a href="#technologies"><span>Technologies</span></a>
+                <a href="#industries"><span>Industries</span></a>
+                <a href="#hire"><span>Hire</span></a>
+                <a href="#portfolio"><span>Portfolio</span></a>
+                <a href="#blog"><span>Blog</span></a>
+                <a href="#career"><span>Career</span></a>
+                <a href="#about"><span>About</span></a>
+                <a href="#contact"><span>Contact</span></a>
+                <a href="" id="genrative-ai">GENRATIVE AI</a>
             </div>
-            <div class="hero_btn_1">
-                <button class="consultaion_btn">Book a Consultaion</button>
-                <button class="portfolio_btn">View Portfolio</button>
-            </div>
-            <button class="ratting_btn"><b>4.9</b> <span style="color: #EC3636; font-size:16px">★★★★★</span></button>
-        </div>
-    </div>
-    <div class="info_cantainer">
-        <div class="box_container">
-            <div class="info_box">
-                <div class="text_cantainer">
-                    <p class="head">$ 100M+</p>
-                    <p class="text"><b>INVESTMENT!</b></p>
-                    <p class="text">Rasied by star-ups.</p>
+            <button class="hamburger">&#9776;</button>
+        </nav>        
+    </header>
+
+    <main>
+    <!-- Home Section -->
+    <section id="home-section">
+        <div class="hero-section">
+            <video style="width: 100%;" autoplay muted loop id="myVideo">
+                <source src="Images/video_banner.mp4" type="video/mp4">
+            </video>
+            <div class="hero-content">
+                <h2 class="hero-heading">Innovating Your Business with Next-Gen Solutions</h2> 
+                <div class="typewriter_container">
+                    <span class="text-wrapper" id="typewriter"></span>
                 </div>
-            </div>
-            <div class="info_box">
-                <div class="text_cantainer">
-                    <p class="head">400+</p>
-                    <p class="text"><b>Projects!</b></p>
-                    <p class="text">That sucessfully dilivered.</p>
+                <div class="hero-btn-1">
+                    <a class="consultaion-btn">Book a Consultaion</a>
+                    <a class="portfolio-btn">View Portfolio</a><br>
                 </div>
-            </div>
-            <div class="info_box">
-                <div class="text_cantainer">
-                    <p class="head">250+</p>
-                    <p class="text"><b>ASSOCIATES!</b></p>
-                    <p class="text">The backbone.</p>
-                </div>
-            </div> 
-            <div class="info_box">
-                <div class="text_cantainer">
-                    <p class="head">13+</p>
-                    <p class="text"><b>Year!</b></p>
-                    <p class="text">The splendid journey.</p>
+                <div class="hero-btn-2">
+                    <a class="ratting-btn"><b>4.9</b> <span style="color: #EC3636; font-size:16px">★★★★★</span></a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="partner">
-        <div class="partner_block">
-            <img src="Images/become-partner-img.jpg" width=1300px alt="">
-        </div>
-        <div class="experience_block">
-            
-        </div>
-    </div>
+    </section>
     
+    <!-- statistic section -->
+    <section class="info_section">
+        <div class="info_cantainer">
+            <div class="box_container">
+                <div class="info_box_container">
+                    <div class="info_box">
+                        <div class="text_cantainer_front">
+                            <p><strong>$ 100M+</strong><br>
+                            <b>INVESTMENT!</b><br>
+                            Rasied by star-ups.</p>
+                        </div>
+                        <div class="text_cantainer_back">
+                            <p> Facilitated start ups by developing MVP level but scalable solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_box_container">
+                    <div class="info_box">
+                        <div class="text_cantainer_front">
+                            <p><strong>400+</strong><br>
+                            <b>PROJECTS!</b><br>
+                            That Successfully delivered.</p>
+                        </div>
+                        <div class="text_cantainer_back">
+                            <p> Feel honoured delivering web and mobile applications to our customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_box_container">
+                    <div class="info_box">
+                        <div class="text_cantainer_front">
+                            <p><strong>250+</strong><br>
+                            <b>ASSOCIATES!</b><br>
+                            The Real Backbone.</p>
+                        </div>
+                        <div class="text_cantainer_back">
+                            <p> Empowered with experience and skillful workforce, diverse technology exposure</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_box_container">
+                    <div class="info_box">
+                        <div class="text_cantainer_front">
+                            <p><strong>13+</strong><br>
+                            <b>YEARS!</b><br>
+                            The Splendid Journey.</p>
+                        </div>
+                        <div class="text_cantainer_back">
+                            <p> Facilitated start ups by developing MVP level but scalable
+                                solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
